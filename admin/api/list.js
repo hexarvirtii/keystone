@@ -33,8 +33,8 @@ exports = module.exports = function(req, res) {
 
 			var count = req.list.model.count(filters);
 			var query = req.list.model.find(filters)
-				.limit(limit)
-				.skip(skip)
+				//.limit(limit)
+				//.skip(skip)
 				.sort(req.list.defaultSort);
 
 			if (req.query.context === 'relationship') {
